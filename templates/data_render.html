@@ -6,12 +6,17 @@
     <body>
         <center>
             <h1>Here we are following semi-dynamic approach i.e rendering data from backend and displaying in our html page</h1>
+            <h1>Student's name is {{name}}</h1>
+            <h1>Student's gender is {{gender}}</h1>
+        
+        
+        
+        {% if age > 25 %}
+            <h1>Student's age is {{age}}</h1>
+        {% endif %}
+
         </center>
-        <ol>
-            <h1><li>Student's name is {{name}}</li></h1>
-            <h1><li>Student's age is {{age}}</li></h1>
-            <h1><li>Student's gender is {{gender}}</li></h1>
-        </ol>
+    
        
     </body>
 </html>
