@@ -21,4 +21,8 @@ from my_app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('data_render/', data_render, name = 'data_render'),
+    path('if_condition/', if_condition, name = 'if_condition'),
+    path('if_else/', if_else, name = 'if_else'),
+    path('if_elif_else/', if_elif_else, name = 'if_elif_else'),
+    path('nested_if/', nested_if, name = 'nested_if'),
 ]
