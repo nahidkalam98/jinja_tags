@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Conditional Statements</title>
+        <title>for_loop</title>
     </head>
     <body>
         <center>
-            <h1>If condition</h1>
-        
-        {% if a > 50 %}
-            <h1>if Block</h1>
-            <h1>Value of a is {{a}}</h1>
-        {% endif %}
+            <b>Using for loop to render data</b>
+
+        <h1>Hobbies are:</h1>
+
+        {% for h in hobbies %} 
+            <h2>{{h}}</h2>
+        {% endfor %}
 
     <div><a href="{% url 'data_render' %}">data_render</a></div>
+    <div><a href="{% url 'if_condition' %}">if_condition</a></div>
     <div><a href="{% url 'if_elif_else' %}">if_elif_else</a></div>
     <div><a href="{% url 'if_else' %}">if_else</a></div>
     <div><a href ="{% url 'nested_if' %}">nested_if</a></div>
-    <div><a href="{% url 'for_loop' %}">for_loop</a></div>
 
-        </center>
+        </center>     
     </body>
 </html>
